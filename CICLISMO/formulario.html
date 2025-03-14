@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Ciclismo</title>
+    <link rel="stylesheet" href="ESTILOS/est_formulario.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registro de Experiencia</h2>
+        <form id="cyclingForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="tipoBicicleta">Tipo de bicicleta:</label>
+            <select id="tipoBicicleta" name="tipoBicicleta">
+                <option value="Montaña">Montaña</option>
+                <option value="Ruta">Ruta</option>
+                <option value="Híbrida">Híbrida</option>
+                <option value="Eléctrica">Eléctrica</option>
+            </select>
+    
+            <label for="nivel">Nivel de experiencia:</label>
+            <select id="nivel" name="nivel">
+                <option value="Principiante">Principiante</option>
+                <option value="Intermedio">Intermedio</option>
+                <option value="Avanzado">Avanzado</option>
+            </select>
+    
+            <button type="submit">Registrar</button>
+        </form>
+
+        <h2>Registros Guardados</h2>
+        <ul id="recordsList"></ul>
+    </div>
+    
+    <script src="./JS/formulario.js"></script>
+</body>
+</html>
